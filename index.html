@@ -1,19 +1,172 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
 
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
   <header>
+
     <div class="container">
-      
+
+      <div class="navbar-flex1">
+
+        <nav class="flex1">
+
+          <ul id="menu-item">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">About</a></li>
+            <li><a href="#products">Services</a></li>
+            <li><a href="#page">Portfolio</a></li>
+            <li><a href="#blog">Contact</a></li>
+            <li><a href="#account">Blog</a></li>
+
+          </ul>
+
+          <span class="fa fa-bars"
+           id="menu-icon" onclick="menutoggle()"></span>
+
+          <div class="logo-flex">
+
+            <img src="https://img.icons8.com/pastel-glyph/50/FF7A00/dog--v4.png" alt="Logo">
+            <h1>Pet Shop</h1>
+
+          </div>
+
+        </nav>
+
+        <div class="account-flex">
+
+          <i class ="far fa-search"></i>
+          <i class ="far fa-user"></i>
+          <i class ="fas fa-heart"></i>
+          <i class ="fas fa-shopping-cart"></i>
+
+        </div>
+
+      </div>
+
     </div>
+
   </header>
+
+
+<script>
+
+  var menu-item = document.getElementById("menu-item");
+  menu-item.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (menu-item.style.maxHeight == "0px") {
+      menu-item.style.maxHeight = "200px";
+    } else {
+      menu-item.style.maxHeight = "0px";
+    }
+  }
+
+  window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+
+</script>  
+
+
+<section class=""home" id="home">
+
+  <div class="container-flex">
+
+    <div class="box-left">
+
+      <div class="left">
+
+        <h1>Welcome to Pet Shop</h1>
+        <p>Your one-stop shop for all your pet needs.</p>
+        <span>Style Destination</span> <br>
+        <button>Shop Now</button>
+
+      </div>
+
+      <div class="right">
+
+        <img src="image/home1.jpg" alt="">
+
+      </div>
+
+    </div>
+
+    <div class="box-right">
+
+      <div class="img">
+
+        <img src="image/home2.jpg" alt="">
+
+      </div>
+
+      <div class="img">
+
+        <img src="image/home3.jpg" alt="">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<section class="offer-top" id="shop">
+
+  <div class="container-flex">
+
+    <div class="left">
+
+      <div class="text">
+
+        <h1>New Product</h1>
+        <h5>DAILY ESSENTIALS</h5>
+        <a href="#">Explore all</a>
+
+      </div>
+
+      <div class="img">
+
+        <img src="image/01.jpg" alt="">
+
+      </div>
+
+    </div>
+
+    <div class="right">
+
+      <div class="text">
+
+        <h1>New Product</h1>
+        <h5>DAILY ESSENTIALS</h5>
+        <a href="#">Explore all</a>
+
+      </div>
+
+      <div class="img">
+
+        <img src="image/02.jpg" alt="">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 </body>
 
