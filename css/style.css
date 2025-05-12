@@ -599,4 +599,24 @@ footer label {
     .box_left {
         width: 100%;
     }
+
+    .sale .left,
+    .offer .right,
+    .offer .left {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .sale .left {
+        margin-bottom: 50px;
+    }
+
+    footer .head {
+        flex-direction: column;
+    }
+
+    footer .input {
+        width: 100%;
+    }
+
 }
