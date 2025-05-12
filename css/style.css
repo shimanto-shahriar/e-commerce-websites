@@ -213,9 +213,9 @@ h5 {
     margin-top: 10px;
 }
 
-.button {
+button {
     border: 2px solid black;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 15px 30px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -228,6 +228,7 @@ button:hover {
     background: #FF7A00;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 /* HOME */
@@ -242,7 +243,11 @@ button:hover {
 }
 
 .offer .left {
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 90px;
+}
+
+.offer .right {
+    margin: 0 0 0 15px;
 }
 
 .offer .right,
@@ -308,7 +313,7 @@ button:hover {
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
-    margin: 10px;
+    margin: 27px;
     background:  white;
 }
 
@@ -348,41 +353,32 @@ button:hover {
     transition: 0.5s;
 }
 
-.sale .left {
-    width: 500px;
-    height: 500px;
-    margin: 20px;
-}
-
 .sale .right {
     position: relative;
 }
 
-.sale .text h2 {
-    font-size: 50px;
-    white-space: 4px;
-    font-weight: 500;
-    color: #5e5e5e;
-}
-
 .sale .para {
     position: absolute;
-    top: 30%;
+    top: 80%;
     left: 15%;
     right: 15%;
     text-align: center;
     padding: 50px;
-    background: rgba(255,255,255,0.5);
 }
 
 .sale h1 {
     font-size: 40px;
     font-weight: 400;
+    color: #ffffff;
+}
+
+.sale h5 {
+    color:#ffffff
 }
 
 .sale a {
-    color: black;
-    border-bottom: 2px solid black;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .sale .img {
